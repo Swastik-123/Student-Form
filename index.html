@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Enrollment Form</h2>
+        <form id="empForm" method="get">
+            <div class="form-group">
+                <label >Roll No : </label>
+                <input type="number" class="form-control"  id="stuRoll" required onchange="getEmp()">
+            </div>
+            <div class="form-group">
+                <label >Full-Name:</label>
+                <input type="text" class="form-control" id="stuName" >
+            </div>
+            
+            <div class="form-group">
+                <label >Class</label>
+                <input type="number" class="form-control" id="stuClass" >
+            </div>
+
+            <div class="form-group">
+                <label >Birth-Date:</label>
+                <input type="date" class="form-control" id="stuDate" >
+            </div>
+            <div class="form-group">
+                <label >Address:</label>
+                <input type="text" class="form-control" id="stuAdd" >
+            </div>
+            <div class="form-group">
+                <label>Enrollment-Date:</label>
+                <input type="date" class="form-control" id="stuEnrol" >
+            </div>
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-lg btn-primary" id="save" onclick="savaData();" disabled>Save</button>
+                <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData();" disabled>Change</button>
+                <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm();" disabled>Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
